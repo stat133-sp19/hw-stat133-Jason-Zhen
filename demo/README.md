@@ -1,6 +1,6 @@
 # Demo
 
-This is just a demo folder with some dummy content.
+I'm changing this text because the assignment told me to.
 
 A quote:
 
