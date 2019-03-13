@@ -75,13 +75,13 @@ In the NBA, prolific scorers tend to get more media coverage and praise in gener
 **2PT Effective Shooting % by Player** 
 
 ```{r, echo=FALSE}
-kable(two_pt_shot_chart, caption= "2PT Effective Shooting by Player")
+kable(two_pt_shot_chart)
 ```
 
 **Effective Shooting % by Player** 
 
 ```{r, echo=FALSE}
-kable(effective_shot_chart, caption="Effective Shooting by Player")
+kable(effective_shot_chart)
 ```
 
 From this table, we can see that Andre Iguodala has the highest 2PT Field Goal percentage among the 5 starting Warriors with a sizable difference between him at 63.8% and Durant at 60.7% and Curry at 54.0% Looking at Effective Shooting % which includes both 2PT and 3PT field goals, Durant takes the lead at 54.1%, Iguodala at 51.8% and Thompson at 47.1%. From these numbers alone, it would appear that Iguodala is the most efficient 2PT Field Goal shooter and even surpassing Thompson and Curry by a fairly large margin in terms of total Effective Shooting %.
@@ -89,7 +89,7 @@ From this table, we can see that Andre Iguodala has the highest 2PT Field Goal p
 **3PT Effective Shooting % by Player** 
 
 ```{r, echo=FALSE}
-kable(three_pt_shot_chart, caption="3PT Effective Shooting by Player")
+kable(three_pt_shot_chart)
 ```
 
 This argument is of course somewhat flawed however because the data fails to account for the fundamental difference in points between 2PT and 3PT Field Goals, that is 3PT Field Goal Shooting %s will naturally be lower because it is a more difficult shot but it is also rewarded with being worth 3 points rather than the typical 2. So while Iguodala has a higher Effective Shooting % than Curry and Thompson, this statistic doesn't necessarily say that he's a more efficient scorer than them because it fails to account for the difference in points earned. 
@@ -103,7 +103,7 @@ knitr::include_graphics("../images/gsw-shot-charts.png")
 Another crucial part of this argument which is not represented in the data here is defense. The shot chart and tables show efficiency of shots or offense for the main players on the Warriors team but it does not showcase any form of defensive rating or any indication towards defensive skill at all. A large part of Andre Iguodala's value comes from his stout defense. Looking at 2018, and drawing reference to [basketball-reference.com](https://www.basketball-reference.com/teams/GSW/2018/on-off/), the Warriors had a defensive rating of 104 when Iguodala was on the court versus 110.8 when he was not. This is shown in the table below but in summary, the Warriors actually had a better defensive rating with players such as Curry and Durant off the court than on the court. Some critics draw issue with defensive rating when used to compare players like this because it does not account for the quality of players which the compared players are defending. For example, Curry and Durant may be defending against higher quality players such as LeBron James or James Harden who are prolific scorers and Iguodala may be defending against bench players or what not. And while there may be some truth to this criticism, defensive rating when it has such a large disparity such as this, there can still be insight to be gleaned which is that Andre Iguodala provides very important defense to this Warriors' team. In fact, Andre Iguodala earned his NBA Finals MVP 2015 primarily off of defending LeBron James, one of the best players of all time. Iguodala held him to ["a net rating of minus-15.5 and ... a true shooting percentage of 46.4 percent, which skyrocketed to a net rating of plus-18.8 and 50.9 percent true shooting"](https://www.washingtonpost.com/news/fancy-stats/wp/2015/06/17/andre-iguodala-is-worst-nba-finals-mvp-in-last-30-years/?noredirect=on&utm_term=.d045db5e0000) when James was not defended by Iguodala. 
 So, if anything, Iguodala tends to get the bulk of more difficult defensive jobs. 
 
-###*Conclusion and Take-home message: *
+### *Conclusion and Take-home message*:
 So...while Iguodala is probably not the main reason for the Warriors dominance, he is still a very integral part of the Warriors team and is being criminally underrated and underappreciated by casual onlookers and fans who simply see the hot scoring of Curry, Thompson and Durant. Iguodala makes his presence known with thunderous (and efficient) dunks and there is good reason that he earned his NBA Finals MVP in 2015 defending one of the best players of all time, Lebron James. 
 
 ***
