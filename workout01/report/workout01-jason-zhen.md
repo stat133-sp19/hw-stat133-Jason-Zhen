@@ -3,25 +3,29 @@ workout01-jason-zhen
 Jason Zhen
 
 **Is Andre Iguodala the Best Player on the Golden State Warriors?**
--------------------------------------------------------------------
+===================================================================
 
 <img src="../images/andre-iguodala.jpg" width="1300" />
 
-### *Introduction:*
+*Introduction:*
+---------------
 
 The Golden State Warriors in the modern day are *THE* super team having won the NBA finals in 2015, 2017 and 2018 accounting for 3 rings in the modern era (defined as beginning in 1998 following the Bulls' breakup). Stephen Curry, Kevin Durant and Klay Thompson are the main Warriors often talked about as being the MVPs or most valuable players to the success of the Warriors, which makes sense because the Warriors came into dominance via Curry and Thompson's league breaking 3PT field goal shooting %. But...is it possible that Andre Iguodala (NBA Finals MVP, 2015) is actually the best and "most valuable" player to the recent success of the Warriors? Is he responsible for the Warriors Dynasty which has formed?
 
 <img src="../images/nba-finals-2015.jpg" width="620" />
 
-### *Motivation:*
+*Motivation:*
+-------------
 
 The Warriors get a lot of media coverage given that they're heralded as the best team in the NBA League by many people having won the championship in back to back years and look to "Three-Peat" in 2019 currently holding the \#1 seed in the Western Conference. Stephen Curry and Kevin Durant get the bulk of this media attention and in general public opinion, are seen as the best or most valuable players on the team but is Andre Iguodala being overlooked or underappreciated? This report will seek to analyze this claim in regards to the value of Andre Iguodala to winning.
 
-### *Background:*
+*Background:*
+-------------
 
 In the NBA, prolific scorers tend to get more media coverage and praise in general for fan votes and MVP discussions. Defense is often underrated and efficient but low scoring often tends to be overlooked. Andre Iguodala fits both of these descriptions of having good defense and efficient non flashy scoring.
 
-### *Discussion and Analysis:*
+*Discussion and Analysis:*
+--------------------------
 
 **2PT Effective Shooting % by Player**
 
@@ -63,14 +67,15 @@ However, what these data points, in particular the shot chart, show is that Andr
 
 Another crucial part of this argument which is not represented in the data here is defense. The shot chart and tables show efficiency of shots or offense for the main players on the Warriors team but it does not showcase any form of defensive rating or any indication towards defensive skill at all. A large part of Andre Iguodala's value comes from his stout defense. Looking at 2018, and drawing reference to [basketball-reference.com](https://www.basketball-reference.com/teams/GSW/2018/on-off/), the Warriors had a defensive rating of 104 when Iguodala was on the court versus 110.8 when he was not. This is shown in the table below but in summary, the Warriors actually had a better defensive rating with players such as Curry and Durant off the court than on the court. Some critics draw issue with defensive rating when used to compare players like this because it does not account for the quality of players which the compared players are defending. For example, Curry and Durant may be defending against higher quality players such as LeBron James or James Harden who are prolific scorers and Iguodala may be defending against bench players or what not. And while there may be some truth to this criticism, defensive rating when it has such a large disparity such as this, there can still be insight to be gleaned which is that Andre Iguodala provides very important defense to this Warriors' team. In fact, Andre Iguodala earned his NBA Finals MVP 2015 primarily off of defending LeBron James, one of the best players of all time. Iguodala held him to ["a net rating of minus-15.5 and ... a true shooting percentage of 46.4 percent, which skyrocketed to a net rating of plus-18.8 and 50.9 percent true shooting"](https://www.washingtonpost.com/news/fancy-stats/wp/2015/06/17/andre-iguodala-is-worst-nba-finals-mvp-in-last-30-years/?noredirect=on&utm_term=.d045db5e0000) when James was not defended by Iguodala. So, if anything, Iguodala tends to get the bulk of more difficult defensive jobs.
 
-### *Conclusion and Take-home message*:
+*Conclusion and Take-home message*:
+-----------------------------------
 
 So...while Iguodala is probably not the main reason for the Warriors dominance, he is still a very integral part of the Warriors team and is being criminally underrated and underappreciated by casual onlookers and fans who simply see the hot scoring of Curry, Thompson and Durant. Iguodala makes his presence known with thunderous (and efficient) dunks and there is good reason that he earned his NBA Finals MVP in 2015 defending one of the best players of all time, Lebron James.
 
 ------------------------------------------------------------------------
 
 **Code:**
----------
+=========
 
 ``` r
 library(readr)
@@ -110,7 +115,7 @@ effective_shot_chart <- shots_chart %>%
 ```
 
 **Charts and Images and Data**
-------------------------------
+==============================
 
 **2PT Effective Shooting % by Player**
 
@@ -155,7 +160,7 @@ kable(effective_shot_chart)
 | Draymond Green |    578|   245|   0.4238754|
 
 **References:**
----------------
+===============
 
 1.  Basketball-reference.com:
     -   <https://www.basketball-reference.com/teams/GSW/2018/on-off/>
