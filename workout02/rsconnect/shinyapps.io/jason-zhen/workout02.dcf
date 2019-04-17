@@ -5,6 +5,6 @@ account: jason-zhen
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 870512
-bundleId: 2017151
+bundleId: 2017178
 url: https://jason-zhen.shinyapps.io/workout02/
-when: 1555458106.6345
+when: 1555459291.3985

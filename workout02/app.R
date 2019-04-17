@@ -1,10 +1,10 @@
-# Example discussed in lecture April-08-2019
+
 
 library(shiny)
 library(ggplot2)
 library(reshape2)
 
-# Define UI for application that draws a histogram
+# Define UI for application 
 ui <- fluidPage(
    
    # Application title
@@ -33,7 +33,6 @@ ui <- fluidPage(
                                min = 0,
                                max = 50,
                                value = 10))
-       
      
    ),
    
@@ -92,7 +91,11 @@ server <- function(input, output) {
        balance[y+1] <- balance[y] * (1 + input$rate/100)
        balance_fixed[y+1] <- (balance_fixed[y] * (1 +input$rate/100)) + input$contrib
        balance_growing[y+1] <- (balance_growing[y] * (1 + input$rate/100)) + contrib_growing[y]
+       
      }
+     
+     
+     
      modality <- data.frame(
        year = 0:input$years,
 
@@ -102,14 +105,12 @@ server <- function(input, output) {
      )
      
      return(modality)
-     
-     
-     
-     
-     
-     
 
    })
+   
+   
+   
+   
   
    output$distPlot <- renderPlot({
      
