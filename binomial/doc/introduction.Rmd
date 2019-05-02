@@ -1,0 +1,82 @@
+---
+title: "Introduction to Binomial"
+author: "Jason zhen"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+```
+
+
+# Binomial
+
+The package `"binomial"` is a minimal self-implemented R package that contains functions for calculating probabilities for a Binomial Random Variable and related functions distribution and summary information, etc. 
+
+
+
+## Finding the probability of a binomial 
+
+There are three functions inside this package to calculate various probabilities of a binomial. They are `bin_probability()`, `bin_distribution()`, and `bin_cumulative()`. 
+
+## bin_probabilities
+
+`bin_probabilities()` takes three arguments: success, trials and probability of success. This function gives us the probability of obtaining that number of successes given the number of trials and probability of success of each trial. 
+
+
+```{r}
+bin_probability(success = 5,trials = 10, p = 0.3)
+```
+
+
+## bin_distribution
+
+`bin_distribution()` takes two arguments: trials and prob. This function gives us the distribution of the ascending levels of success up to a constant number of trials and probability of success of each trial via a dataframe with classes bindis and data.frame. 
+
+```{r}
+
+bin1 <- bin_distribution(trials = 10,p = 0.3)
+bin1
+```
+
+
+We can then run `plot()` on this bindis object to visualize the probabilities with a bar-graph to showcase the distribution for each success level given a constant number of trials. 
+
+```{r}
+
+plot(bin1)
+```
+
+
+## bin_cumulative
+
+`bin_cumulative()` takes two arguments: trials and prob. This function gives us the cumulation of the ascending levels of success up to a constant number of trials and probability of success of each trial via a dataframe with classes bincum and data.frame.
+
+```{r}
+bin1 <- bin_cumulative(trials = 10,p = 0.3)
+bin1
+```
+
+We can then run `plot()` on this bincum object to visualize the probabilities with a line-plot to showcase the cumulation of ascending success levels.
+
+```{r}
+plot(bin1)
+```
+
+
+## Creating a `binvar`, binomial variable object
+
+To create a binomial variable object, use `bin_variable()`. This function takes two arguments, trials and probability of success. This is done so that the user can run `summary` on the binvar object to visualize summary measures: mean, variance, mode, skewness and kurtosis.
+
+```{r}
+bin1 <- bin_variable(trials = 10, p= 0.3)
+summary(bin1)
+
+```
+
